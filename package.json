@@ -1,0 +1,23 @@
+{
+  "name": "node-reldb",
+  "version": "1.0.0-alpha",
+  "description": "Light weight relation database using files and search API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnavmaiti/node-reldb.git"
+  },
+  "keywords": [
+    "relational",
+    "database"
+  ],
+  "author": "Arnav Maiti <arnavmaiti@gmail.com> (https://www.arnavmaiti.com)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/arnavmaiti/node-reldb/issues"
+  },
+  "homepage": "https://github.com/arnavmaiti/node-reldb#readme"
+}
