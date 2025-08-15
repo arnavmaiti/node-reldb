@@ -7,3 +7,7 @@
 Typescript library to create and store relational data in a simple structure.
 
 Provides ability to store and retrive data based on query.
+
+# Changelog
+
+You can read the complete changelog [here](https://github.com/arnavmaiti/node-reldb/wiki/Releases).
