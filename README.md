@@ -2,7 +2,7 @@
 
 [![Project CI Status](https://github.com/arnavmaiti/node-reldb/actions/workflows/ci.yml/badge.svg)](https://github.com/arnavmaiti/node-reldb/actions/workflows/ci.yml)
 ![Release Version](https://img.shields.io/github/package-json/v/arnavmaiti/node-reldb?color=blue)
-![GitHub License](https://img.shields.io/github/license/:user/:repo)
+![GitHub License](https://img.shields.io/github/license/arnavmaiti/node-reldb)
 
 Typescript library to create and store relational data in a simple structure.
 
