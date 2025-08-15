@@ -6,24 +6,15 @@ on:
       - main
 
 jobs:
-  update_badge:
+  check-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Get version from package.json
         id: get_version
-        run: echo "VERSION=$(jq -r '.version' package.json)" >> $GITHUB_OUTPUT
-        # For other config files, adjust the command accordingly
-        # e.g., for version.txt: echo "VERSION=$(cat version.txt)" >> $GITHUB_OUTPUT
-
-      - name: Create / Update Version Badge
-        uses: schneegans/dynamic-badges-action@v1.6.0
-        with:
-          # This example uses a static badge, but you can also use a dynamic one
-          # if you host the version number somewhere accessible by URL.
-          # For simplicity, we'll create a static badge here.
-          badge_name: version
-          label: Version
-          message: ${{ steps.get_version.outputs.VERSION }}
-          color: blue
-          filename: README.md
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Version: $VERSION"
+    outputs:
+      version: ${{ steps.get_version.outputs.version }}
