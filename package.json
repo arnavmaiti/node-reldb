@@ -1,6 +1,6 @@
 {
   "name": "@node-reldb/node-reldb",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0",
   "description": "Light weight relation database using files and search API",
   "files": [
     "dist"
